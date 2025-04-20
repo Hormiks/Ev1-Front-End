@@ -13,12 +13,8 @@
     <script src="../assets/js/color-modes.js"></script>
 
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="apple-touch-icon" href="../assets/img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="../assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="../assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="../assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="../assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
     <link rel="icon" href="../assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#712cf9">
     <style>
@@ -131,7 +127,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   </head>
   <body>
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
   <symbol id="check2" viewBox="0 0 16 16">
     <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
   </symbol>
@@ -145,16 +141,20 @@
   <symbol id="sun-fill" viewBox="0 0 16 16">
     <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
   </symbol>
-</svg>
+  </svg>
+  <style>
+    .card-img-top {
+  height: 225px;
+  object-fit: cover;
+}
 
-
+  </style>
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
         id="bd-theme"
         type="button"
         aria-expanded="false"
-        data-bs-toggle="dropdown"
-        
+        data-bs-toggle="dropdown"       
         aria-label="Toggle theme (auto)">
   <svg class="bi my-1 theme-icon-active" aria-hidden="true"><use href="#circle-half"></use></svg>
   <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
@@ -184,53 +184,45 @@
 </ul>
 
     </div>
-
-    
-<header data-bs-theme="dark">
-  <div class="collapse text-bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4>About</h4>
-          <p class="text-body-secondary">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4>Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on X</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
-          </ul>
+  <header data-bs-theme="dark">
+    <div class="collapse text-bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4>About</h4>
+            <p class="text-body-secondary">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4>Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Follow on X</a></li>
+              <li><a href="#" class="text-white">Like on Facebook</a></li>
+              <li><a href="#" class="text-white">Email me</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <h3 class="float-md-start mb-0">Cover</h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link fw-bold py-1 px-0" href="/cover/index.html">Home</a>
-        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="/Subindex1.html">Música</a>
-        <a class="nav-link fw-bold py-1 px-0" href="/blog/Subindex2.html">Expresión artística</a>
-        <a class="nav-link fw-bold py-1 px-0" href="/jumbotron/Subindex3.html">Filosofía social</a>
-      </nav>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <h3 class="float-md-start mb-0">Cover</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link fw-bold py-1 px-0" href="/cover/index.html">Home</a>
+          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="/Subindex1.html">Música</a>
+          <a class="nav-link fw-bold py-1 px-0" href="/blog/Subindex2.html">Expresión artística</a>
+          <a class="nav-link fw-bold py-1 px-0" href="/jumbotron/Subindex3.html">Filosofía social</a>
+        </nav>
+      </div>
+      </div>
     </div>
-    </div>
-  </div>
-</header>
+  </header>
 
 <main>
 
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">Origen musical</h1>
-        <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
-      </div>
+        <p class="lead text-body-secondary">El gótico empezó a desarrollarse a finales de los años 70 con la llegada del punk y el nacimiento del rock gótico representado por grupos como Siouxsie Sioux And The Banshees, The Damned, The Cure y Joy Division. Las jóvenes generaciones en Europa y E.UA. adoptaron una identidad visual que iba contra lo establecido en ese entonces. Siendo también una derivación del post-punk y tuvo su epicentro en el Reino Unido (entre finales de 1970 y mediados de 1980).</p>
     </div>
   </section>
 
@@ -240,45 +232,14 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/57/Siouxsie_and_the_Banshees_-_Tinderbox.png" class="card-img-top" alt="Tinderbox - Siouxsie And The Banshees">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h3>Siouxsie And The Banshees</h3>
+              <p class="card-text">
+                Banda británica formada en 1976 por la vocalista Siouxsie Sioux y el bajista Steven Severin. Pioneros del movimiento post-punk, su música evolucionó hacia el rock alternativo, con sencillos pop.
+              </p>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">Album: Tinderbox</small>
               </div>
             </div>
           </div>
@@ -286,45 +247,14 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img src="https://cdn-images.dzcdn.net/images/cover/013c601da70bf83a0fea61bd9c526449/0x1900-000000-80-0-0.jpg" class="card-img-top" alt="Unknown Pleasures - Joy Division">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h3>Joy Division</h3>
+              <p class="card-text">
+                Formada a raíz de la explosión del punk en Inglaterra, Joy Division se convirtió en la primera banda del movimiento post-punk venidero, apuntando hacia el auge de la música alternativa melancólica de los años 80.
+              </p>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">Album: Unknown Pleasures</small>
               </div>
             </div>
           </div>
@@ -332,49 +262,65 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img src="https://i.scdn.co/image/ab67616d0000b273a86b38c060c9d527588ed716" class="card-img-top" alt="First and Last and Always - The Sisters of Mercy">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h3>The Sisters of Mercy</h3>
+              <p class="card-text">
+                The Sisters of Mercy es una banda británica oriunda de Leeds, considerada una de las bandas más importantes y quizás la que más destaca de la segunda oleada de rock gótico, nacida en la época del post-punk inglés.
+              </p>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">Album: First and Last and Always</small>
               </div>
             </div>
           </div>
         </div>
+
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img src="https://i.scdn.co/image/ab67616d0000b273bfbd14b0eec61a70a461c6c0" class="card-img-top" alt="Seduction - The Danse Society">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h3>The Danse Society </h3>
+              <p class="card-text">
+                Es una banda inglesa de rock gótico, formada en Barnsley en 1980. Estuvieron originalmente activos hasta 1986, reformándose en 2011.
+              </p>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">Album: Seduction</small>
               </div>
             </div>
           </div>
         </div>
+
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img src="https://cdnx.jumpseller.com/vinilosbrieba/image/46714086/the-cure-seventeen-seconds.webp?1710875979" class="card-img-top" alt="seventeen seconds - The Cure">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h3>The Cure</h3>
+              <p class="card-text">
+                The Cure nació a finales de la década de los 70s siendo una de las tantas bandas que surgirían de la revolución del punk, aunque un tanto más oscuros que muchos de sus contemporáneos. Por lo mismo, sus primeros pasos que apuntaban al post-punk ya comenzaban a evidenciar rasgos góticos en trabajos como Seventeen Seconds (1980).
+              </p>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">Album: seventeen seconds</small>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://cdn-images.dzcdn.net/images/cover/09bb667abecbb8f96eb8c9e41e4c0163/0x1900-000000-80-0-0.jpg" class="card-img-top" alt="Volume two - Bauhaus">
+            <div class="card-body">
+              <h3>Bauhaus</h3>
+              <p class="card-text">
+                Bauhaus es una banda inglesa que se considera pionera del rock gótico. Su sonido oscuro y lúgubre, influenciado por el punk, post-punk, glam rock, dub, psicodelia y funk, ayudó a definir el estilo del rock gótico.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-body-secondary">Album: Volume two</small>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        
       </div>
     </div>
   </div>
@@ -384,10 +330,8 @@
 <footer class="text-body-secondary py-5">
   <div class="container">
     <p class="float-end mb-1">
-      <a href="#">Back to top</a>
+      Evaluación 1 - FrontEnd - Daniela Romero Candia
     </p>
-    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
   </div>
 </footer>
 <script defer src="../assets/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"></script>
